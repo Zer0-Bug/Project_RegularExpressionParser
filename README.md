@@ -37,25 +37,25 @@ This project implements a Regular Expression (Regex) Parser in the C programming
 
 ## Examples
 
-- `hello contains {hello}`
-- `gray|grey contains {gray, grey}`
-- `gr(a|e)y contains {gray, grey}`
-- `gr[ae]y contains {gray, grey}`
-- `b[aeiou]bble contains {babble, bebble, bibble, bobble, bubble}`
-- `[b-chm-pP]at|ot contains {bat, cat, hat, mat, nat, oat, pat, Pat, ot}`
+- `hello` contains `{hello}`
+- `gray|grey` contains `{gray, grey}`
+- `gr(a|e)y` contains `{gray, grey}`
+- `gr[ae]y` contains `{gray, grey}`
+- `b[aeiou]bble` contains `{babble, bebble, bibble, bobble, bubble}`
+- `[b-chm-pP]at|ot` contains `{bat, cat, hat, mat, nat, oat, pat, Pat, ot}`
 - `[a-zA-Z]` matches any lowercase or uppercase letter.
-- `colou?r contains {color, colour}`
-- `rege(x(es)?|xps?) contains {regex, regexes, regexp, regexps}`
-- `go*gle contains {ggle, gogle, google, gooogle, goooogle, ...}`
-- `go+gle contains {gogle, google, gooogle, goooogle, ...}`
-- `g(oog)+le contains {google, googoogle, googoogoogle, googoogoogoogle, ...}`
-- `z{3} contains {zzz}`
-- `z{3,6} contains {zzz, zzzz, zzzzz, zzzzzz}`
-- `z{3,} contains {zzz, zzzz, zzzzz, ...}`
-- `[Gg]o\*\*le contains {Go**le, go**le}`
+- `colou?r` contains `{color, colour}`
+- `rege(x(es)?|xps?)` contains `{regex, regexes, regexp, regexps}`
+- `go*gle` contains `{ggle, gogle, google, gooogle, goooogle, ...}`
+- `go+gle` contains `{gogle, google, gooogle, goooogle, ...}`
+- `g(oog)+le` contains `{google, googoogle, googoogoogle, googoogoogoogle, ...}`
+- `z{3}` contains `{zzz}`
+- `z{3,6}` contains `{zzz, zzzz, zzzzz, zzzzzz}`
+- `z{3,}` contains `{zzz, zzzz, zzzzz, ...}`
+- `[Gg]o\*\*le` contains `{Go**le, go**le}`
 - `\d` matches any digit.
 - `1\d{10}` matches an 11-digit string starting with a 1.
-- `Hello\nworld contains Hello followed by a newline followed by world`
+- `Hello\nworld` contains Hello followed by a newline followed by world.
 - `mi.....ft` contains a nine-character substring beginning with "mi" and ending with "ft".
 - `^dog` begins with "dog".
 - `dog$` ends with "dog".
